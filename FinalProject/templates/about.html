@@ -1,0 +1,93 @@
+<!-- about.html -->
+{% extends 'bootstrap/base.html' %}
+{% block title %}
+    cst205
+{% endblock %}
+
+{% block content %}<!-- body -->
+<head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+
+        <style>
+      body {background-color: powderblue;
+            text-align: center;
+            font-size: 20px;
+            font-family: verdana;
+            }
+        p{
+              text-align: left;
+              margin-left: 250px;
+        }
+       h1   {color: #333;
+             font-family: serif;
+           }
+
+       #b1{
+            border-radius: 15px;
+           }
+       ul{
+           font-size: 22px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+       li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+
+        li {
+            float: left;
+
+            }
+
+        li a:hover {
+            background-color: #111;
+        }
+      .active {
+            background-color: gray;
+        }
+        footer{
+          font-size:10px;
+        }
+        #contactform{
+            float: none;
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+       </style>
+<ul>
+        <li><a href="home">Home</a></li>
+         <li><a class="active" href = "about">About</a></li>
+         <li><a href="info">Graph 2018</a></li>
+</ul>
+    <h1>About this website</h1>
+    <p>This page was for the easy and entertaining use of knowing the climate of the city where you live,  <br>
+      or any other city you have the curiosity to know the weather. Another of our purposes is to inform <br>
+      how the climate changes have been in our county.<br><br>
+   </p>
+      For any opinions or questions:<br>
+      Phone: 1-800-369-55-32 <br>
+      Email: weatherTrack@csumb.edu
+
+
+       <div id="contactform">
+         <h3>Contact Us</h3>
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvAsOSuOdqVhsTbmepRmP32J5kejod0oGfLSM7lhoRZRHCBg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+       <div class="hr"><hr /></div>
+</body>
+<footer>
+             <em> CST205 Multimedia Design. 2018&copy;<br /></em>
+            <strong>Disclaimer:</strong> It is used for academic purposes only.<br>
+            <img src="../static/csumb.png" alt = "csumb logo"/>
+</footer>
+
+{% endblock%}
